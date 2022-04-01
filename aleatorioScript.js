@@ -1,5 +1,5 @@
 var botao = document.querySelector('#botao')
-
+var resultado = document.querySelector('#resultado')
 botao.addEventListener('click', sortear)
 
 function sortear() {
@@ -8,6 +8,6 @@ function sortear() {
 
     /* FIXME: Consertar o gerador de números pra que inclua o limite superior. */
     var valor = Math.floor(Math.random()*(inputMax - inputMin) + inputMin)
-    
-    console.log(valor)
+
+    resultado.innerHTML = `<p id="resultado">O valor sorteado foi: <b> \n ${valor} </b></p>`
 }

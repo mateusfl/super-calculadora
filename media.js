@@ -36,7 +36,7 @@ var botao = document.querySelector('#botao')
         var numeros = new Array(document.querySelectorAll('.numeros').length).fill()
         var media = 0
 
-        /* coleta o valor do array de classes numeros, na posição i, transforma em número e guarda no array numeros */
+        /* coleta o valor do array de classes numeros, na posição i, transforma em real e guarda no array numeros */
         for (let i = 0; i < numeros.length; i++) {
             numeros[i] = parseFloat(document.querySelectorAll('.numeros')[i].value) 
             media += numeros[i]
@@ -54,3 +54,4 @@ var botao = document.querySelector('#botao')
             caixaResultado.innerText = `O resultado é ${media.toFixed(3)}`
         }
     }
+    
