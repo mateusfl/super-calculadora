@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #ABDAE1;
+}
+.header{
+    /* flex box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    /* estilização geral */
+    font-family: 'Montserrat', sans-serif;
+
+    margin-top: 120px;
+    padding: 20px;
+}
+#paragrafo{
+    font-size: 18px;
+}
+
+.main{
+    padding: 20px;
+}
+
+.inputs{
+    /* flex box */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    /* estilizaçao geral */
+    margin-inline: auto;
+    width: 500px;
+    height: auto;
+}
+
+/* Remover as setas de incremento do input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#inputMin, #inputMax{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px #aaaaaa;
+    outline: none;
+}
+
+.botaoComResultado{
+    /* flex box */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+    /* estilizaçao geral */
+    margin-inline: auto;
+    padding: 25px;
+    width: 500px;
+}
+#botao{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    width: 110px;
+    height: 45px;
+}
+
+#resultado{
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #aaaaaa;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    width: 170px;
+    height: 45px;
+}
