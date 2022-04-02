@@ -9,14 +9,6 @@ var botao = document.querySelector('#botao')
 
     var caixaResultado = document.querySelector('#resultado')
 
-    var trocaPagina = document.querySelector('#trocaPagina')
-    trocaPagina.addEventListener('click', trocaDePagina)
-
-    function trocaDePagina(){
-        console.log("aoskdaskdk")
-        location.href = "http://127.0.0.1:5500/teste.html"
-    }
-
     function adicionaNumero(){
         var novoInput = document.createElement('input')
         novoInput.className = 'numeros'
@@ -45,13 +37,12 @@ var botao = document.querySelector('#botao')
         media = media / numeros.length
 
         if(Number.isNaN(media) == true){
-            caixaResultado.innerText = `Por favor, preencha todos os números.`
+            caixaResultado.innerHTML = `<p id="resultado">Erro. Preencha todos os campos.</p>`
         }
         else if(Number.isInteger(media) == true){
-            caixaResultado.innerText = `O resultado é ${media}`
+            caixaResultado.innerHTML = `<p id="resultado">O resultado é: <b>${media}</b></p>`
         }
         else{
-            caixaResultado.innerText = `O resultado é ${media.toFixed(3)}`
+            caixaResultado.innerHTML = `<p id="resultado">O resultado é: <b>${media.toFixed(3)}</b></p>`
         }
     }
-    
