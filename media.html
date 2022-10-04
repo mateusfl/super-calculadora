@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media.css" />
     <title>Calculadora</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <h1 id="titulo">Calculadora de média</h1>
-        <p class="paragrafo">Digite os valores e aperte o botão para calcular a média entre eles.</p>
-        <p class="paragrafo">Para adicionar ou retirar números, utilize os botões.</p>
+      <h1 id="titulo">Calculadora de média</h1>
+      <p class="paragrafo">
+        Digite os valores e aperte o botão para calcular a média entre eles.
+      </p>
+      <p class="paragrafo">
+        Para adicionar ou retirar números, utilize os botões.
+      </p>
     </header>
 
     <main class="main">
-        <div class="addremover">
-            <button id="adicionar">adicionar um número</button>
-            <button id="remover">remover um número</button>
-        </div>
+      <div class="addremover">
+        <button id="adicionar">adicionar um número</button>
+        <button id="remover">remover um número</button>
+      </div>
 
-        <div class="inputs">
-            <input type="number" class="numeros">
-            <input type="number" class="numeros">
-        </div>
-        
-        <div class="botaoComResultado">
-            <button id="botao">calcular</button>
-            <p id="resultado"></p>
-        </div>
+      <div class="inputs">
+        <input type="number" class="numeros" />
+        <input type="number" class="numeros" />
+      </div>
+
+      <div class="botaoComResultado">
+        <button id="botao">calcular</button>
+        <p id="resultado"></p>
+      </div>
     </main>
     <div class="dropdownContainer">
-        <div class="dropTrigger">Modos</div>
-        <div class="dropdown">
-            <a href="http://127.0.0.1:5500/media.html">Média</a>
-            <a href="http://127.0.0.1:5500/aleatorio.html">Sorteador</a>
-        </div>
+      <div class="dropTrigger">Modos</div>
+      <div class="dropdown">
+        <a href="./media.html">Média</a>
+        <a href="./aleatorio.html">Sorteador</a>
+      </div>
     </div>
-
-</body>
-<script src="media.js"></script>
+  </body>
+  <script src="media.js"></script>
 </html>
